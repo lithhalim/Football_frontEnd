@@ -1,0 +1,78 @@
+@use "../../../../../main-style/style.scss";
+
+.summery-container {
+  height: 100vh; overflow-y: scroll;
+    table {
+        img {
+            width: 20px; height: 20px;
+            margin: 10px;
+        }
+    }
+    .gool-score-container {
+        display: flex; align-items: center; justify-content: center;
+        text-align: start;
+    }
+    .card-saver {
+        width: 15px; height: 20px; margin: 10px; border-radius: 5px;
+    }
+}
+
+.summery-container {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse; border: 2px solid rgba(39, 39, 39, 0.473);
+    border-radius: 10px; margin-top: 5px; 
+
+    table {
+        border: none;
+    }
+  }
+  
+  .summery-container td, .summery-container th {
+    border-bottom: 1px solid  rgba(39, 39, 39, 0.473);
+   
+  }
+  .summery-container th {
+    text-align: center; text-transform: capitalize; font-weight: bold;
+  }
+  .summery-container td{
+    text-align: center;
+  }
+
+
+  @media screen and (max-width:1400px) {
+    .summery-container td, .summery-container th{
+      padding: 10px 77px;      
+    } 
+  }
+  @media screen and (max-width:1300px) {
+    .summery-container td, .summery-container th{
+      padding: 10px 60px;      
+    } 
+  }
+
+  @media screen and (max-width:1200px) {
+      .summery-container td, .summery-container th{
+        padding: 10px 50px;      
+      } 
+  
+  }
+
+  @media screen and (max-width:1000px) {
+      .summery-container td, .summery-container th{
+        padding: 5px 40px; 
+      }
+
+  } 
+  @media screen and (max-width:800px) {
+      .summery-container td, .summery-container th{
+        padding: 5px 23px; 
+      }
+     
+  } 
+  @media screen and (max-width:600px) {
+    .summery-container td, .summery-container th{
+      padding: 5px 10px; 
+    }
+   
+} 
+

@@ -1,0 +1,20 @@
+@use "../../../../main-style/style.scss";
+*{margin: 0;padding: 0;list-style: none;box-sizing: border-box;}
+.carsule-container {
+    height: 100vh; overflow-y: hidden;
+    .carsule-slider {
+        display: grid; grid-template-columns: repeat(auto-fill,minmax(600px,1fr));          
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .carsule-container {
+        .carsule-slider {
+            display: grid; grid-template-columns: repeat(auto-fill,minmax(400px,1fr));          
+        }
+    }    
+}

@@ -1,0 +1,56 @@
+@use  '../../main-style/style.scss';
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+
+  }
+  
+  
+.navbar-news-bar-section {
+    width: 250px;     position: sticky;top: 10vh;left: 0;
+    color: style.$color; padding: 0; margin: 0;
+    border: 1px solid style.$hover; border-radius: 5px;
+    height: 100vw; overflow-y: scroll;
+    .header-news-bar-section {
+        display: flex; align-items: center; justify-content:space-between;
+        border: 1px solid style.$hover;height: 35px; padding: 5px;
+        font-weight: bold;
+    }
+    .item-add {
+        padding: 10px;  border-radius: 10px; position: relative;
+        cursor: pointer;
+        img {
+            max-width: 100%;height: 155px;
+        }
+        p{
+            position: absolute; z-index: 1000; bottom: 20px; left: 0;
+            padding: 5px 15px; font-weight: bold;
+        }
+    }
+
+      
+}
+
+@media screen and (max-width:1200px) {
+    .navbar-news-bar-section {
+      display: none;
+    }
+
+}

@@ -1,0 +1,96 @@
+@use "../../../../../main-style/style.scss";
+.table-container-two {
+  height: 100vh;
+  overflow-y: scroll;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 2px solid rgba(39, 39, 39, 0.473);
+  border-radius: 10px;
+}
+
+.table-container-two table {
+  border: none;
+}
+
+.table-container-two td, .table-container-two th {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.table-container-two th {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.table-container-two td {
+  text-align: center;
+}
+
+.select-two-plear-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.select-two-plear-table .file1-section {
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.select-two-plear-table .activass {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 1400px) {
+  .table-container-two td, .table-container-two th {
+    padding: 10px 32px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .table-container-two td, .table-container-two th {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .table-container-two td, .table-container-two th {
+    padding: 10px 23px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .table-container-two td, .table-container-two th {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .table-container-two td, .table-container-two th {
+    padding: 5px 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .table-container-two td, .table-container-two th {
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .table-container-two td, .table-container-two th {
+    padding: 5px 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

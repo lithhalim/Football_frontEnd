@@ -1,0 +1,106 @@
+@use '../../main-style/style.scss';
+
+%flex {
+display: flex; 
+align-items: center;
+}
+
+body {
+    background-color: black;
+}
+.header-container {
+    margin-top: 50px;position: sticky;top: 0;left: 0;
+    background-color: black; z-index: 1000000; height: 10vh;
+    color:style.$color;margin: 0px 100px;
+    @extend %flex; justify-content: space-between;
+    text-transform: capitalize;font-weight: bold ;
+
+    .nav-bar-section {
+        cursor: pointer;
+        display: none
+    }
+
+
+
+    .Slider-bar {
+        @extend %flex;
+        .logo {
+            font-size: 1.5em; text-transform: uppercase;
+            margin-left: 15px;
+            span {
+                color:style.$active;margin-left: 5px;
+            }
+        }
+    }
+    
+
+
+    .select-item-container  {
+        @extend %flex; 
+        li {
+            @extend %flex;
+            span {margin-left: 5px;}padding: 10px 30px;
+            cursor: pointer;
+            &:hover{
+                color: style.$hover; transition: all .5s;
+            }
+        }
+        .actviso{
+            background-color:style.$active;
+            border-radius: 20px;
+        }
+    }
+     .search-item {
+        cursor: pointer;
+        display: none;
+    }
+    
+
+
+}
+
+@media screen and (max-width:1200px) {
+    .header-container{
+        .select-item-container{
+             transform: translateX(-3000px);
+            display: block; position: absolute; left: 0px; top: 60px;
+            z-index: 100000 ; background-color:black;width: 100%;
+            li  {
+                width: 100%; display: flex; align-items: center;
+                justify-content: center;
+
+            }
+        }
+        .showBar{
+            transform: translateX(0px);
+            transition: all 1s;
+        }
+    }
+    .header-container {
+        margin: 30px;
+
+    }
+    .Slider-bar {
+        justify-content: space-between;width: 100%;
+    }
+    .header-container .search-item {
+        display: block;
+    }
+
+    .header-container {
+
+    .nav-bar-section {
+        display: block;
+    }
+}
+
+
+}
+@media screen and (max-width:700px) {
+
+        .header-container {
+            margin: 30px;
+
+        }
+    
+}

@@ -1,0 +1,44 @@
+@use "../../../main-style/style.scss";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+  list-style: none;
+}
+
+.scoure-container-two-plear {
+  background-color: rgba(41, 41, 41, 0.267);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.scoure-container-two-plear li img {
+  width: 60px;
+  height: 60px;
+}
+
+.scoure-container-two-plear .first-team-container, .scoure-container-two-plear .secand-team-container, .scoure-container-two-plear .middel-item-two {
+  max-width: 150px;
+  text-align: center;
+}
+
+.scoure-container-two-plear .first-team-container p, .scoure-container-two-plear .secand-team-container p, .scoure-container-two-plear .middel-item-two p {
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+@use "../../../main-style/style.scss";
+*{margin: 0;padding: 0;list-style: none; box-sizing: border-box;}
+.select-two-plear-container {
+    display: flex; color: style.$color;
+    justify-content: center; text-transform: capitalize; font-weight: bold;
+    li{
+        padding: 15px 30px;
+        &:hover{
+             transition: all .5s;
+            cursor: pointer;
+        }
+
+    }
+    .activass{
+        color: orangered;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .select-two-plear-container{
+        li {
+            padding: 15px 15px;
+        }
+    }
+}

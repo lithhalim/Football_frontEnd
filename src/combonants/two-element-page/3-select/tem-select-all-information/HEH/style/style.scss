@@ -1,0 +1,34 @@
+@use "../../../.././../main-style/style.scss";
+.head-to-head-container {
+    height: 100vh; overflow-y: scroll; 
+    border: 2px solid rgba(39, 39, 39, 0.473); padding: 20px;
+    border-radius: 10px;
+    .text-h2h {
+        p{
+            padding: 5px; text-transform: capitalize; font-weight: bold;
+            font-size: 1.1em;
+        }
+        p:last-child{
+            font-weight: normal;
+        }
+    }
+    .head-container {
+        margin-bottom: 10px; margin-top: 20px;
+        background-color: rgba(192, 192, 192, 0.082);
+        padding: 10px; border-radius: 10px;
+
+        li {
+            display: flex; justify-content: space-between; padding: 5px;
+            text-align: center;
+            p {
+                padding: 5px;
+            }
+            img {
+                width: 30px; height: 30px;
+            }
+            .first-side {
+                display: flex; text-align: center;
+            }
+        }
+    }
+}

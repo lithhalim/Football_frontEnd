@@ -1,0 +1,40 @@
+@use "../../../main-style/style.scss";
+.header-container-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-container-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container-section li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container-section li div {
+  margin-left: 10px;
+}
+
+.header-container-section li img {
+  display: block;
+  width: 35px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 3px;
+}
+/*# sourceMappingURL=style.css.map */

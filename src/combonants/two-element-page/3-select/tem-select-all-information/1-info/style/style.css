@@ -1,0 +1,32 @@
+@use "../../../../../main-style/style.scss";
+.info-two-plear {
+  height: 100vh;
+  overflow-y: scroll;
+  border-radius: 10px;
+  border: 2px solid rgba(39, 39, 39, 0.473);
+}
+
+.info-two-plear .header-name {
+  padding: 15px 5px;
+  font-weight: bold;
+}
+
+.info-two-plear .match-info {
+  margin: 10px;
+}
+
+.info-two-plear .match-info li {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid rgba(39, 39, 39, 0.473);
+}
+
+.info-two-plear .match-info li div {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=style.css.map */

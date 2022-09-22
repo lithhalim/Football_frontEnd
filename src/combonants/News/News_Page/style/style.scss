@@ -1,0 +1,56 @@
+@use "../../../main-style/style.scss";
+
+
+.News-page-container {
+    display: flex;justify-content: space-between;   position: sticky;top: 10vh;left: 0;
+    margin: 20px 100px;
+    text-transform: capitalize;box-sizing: border-box;text-decoration: none;list-style: none;
+    color: style.$color;
+    .main-section {
+        width: 65vw;
+        h1 {
+            padding: 15px; font-size: 1.3em;
+        }
+    }
+    .header-main {
+        display: flex; align-items: center; justify-content: space-between;
+        img {
+            width: 50px; height: 50px; border-radius: 50%; display: block;
+        }
+        li {
+            display: flex;align-items: center;padding: 10px 5px;
+            p {
+                padding: 3px 10px;
+            }
+        }
+    }
+    .image-news {
+        width: 100%;max-height: 600px;
+    }
+
+    .description, .content {
+        padding: 5px ;text-transform: capitalize; font-weight: bold; margin-bottom: 15px;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .News-page-container{
+        .main-section {
+            width: 100vw;
+        }
+    
+    } 
+
+}
+
+@media screen and (max-width:700px) {
+    .News-page-container{
+        margin: 20px 0px;
+        .main-section {
+            width: 100vw;
+        }
+    
+    } 
+
+}

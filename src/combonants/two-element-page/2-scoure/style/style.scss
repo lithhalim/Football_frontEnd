@@ -1,0 +1,20 @@
+@use "../../../main-style/style.scss";
+*{margin: 0;padding: 0;box-sizing: border-box;text-decoration: dashed;list-style: none;}
+
+.scoure-container-two-plear {
+    background-color: rgba(41, 41, 41, 0.267);
+    display: flex; align-items: center; text-transform: capitalize; 
+    font-weight: bold; padding: 15px; border-radius: 10px; margin-top: 10px;
+    width: 100%;        justify-content: space-around;
+    li{
+        img {
+            width: 60px; height: 60px;
+        }
+    }
+    .first-team-container, .secand-team-container,.middel-item-two {
+        max-width: 150px;text-align: center;
+        p{
+            margin-top: 10px; font-size: 1.3em;
+        }
+    }
+}

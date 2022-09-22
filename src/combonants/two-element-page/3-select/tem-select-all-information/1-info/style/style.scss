@@ -1,0 +1,18 @@
+@use "../../../../../main-style/style.scss";
+.info-two-plear {
+    height: 100vh; overflow-y: scroll; border-radius: 10px;
+    border: 2px solid rgba(39, 39, 39, 0.473);
+    .header-name {
+        padding: 15px 5px; font-weight: bold;
+    }
+    .match-info {
+        margin: 10px;
+        li {
+            padding: 15px; display: flex; align-items: center;
+            border: 2px solid rgba(39, 39, 39, 0.473);
+            div {
+                margin-left: 10px;
+            }
+        }
+    }
+}

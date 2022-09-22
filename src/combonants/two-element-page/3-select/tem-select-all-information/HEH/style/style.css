@@ -1,0 +1,55 @@
+@use "../../../.././../main-style/style.scss";
+.head-to-head-container {
+  height: 100vh;
+  overflow-y: scroll;
+  border: 2px solid rgba(39, 39, 39, 0.473);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.head-to-head-container .text-h2h p {
+  padding: 5px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.head-to-head-container .text-h2h p:last-child {
+  font-weight: normal;
+}
+
+.head-to-head-container .head-container {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  background-color: rgba(192, 192, 192, 0.082);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.head-to-head-container .head-container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  text-align: center;
+}
+
+.head-to-head-container .head-container li p {
+  padding: 5px;
+}
+
+.head-to-head-container .head-container li img {
+  width: 30px;
+  height: 30px;
+}
+
+.head-to-head-container .head-container li .first-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
