@@ -23,7 +23,7 @@ function Item_section({DataUse}:any) {
   return (
     <div className='item-add' onClick={goToPage} datatype={DataAllString}>
       <img src={urlToImage} alt="" />
-      <p>{title.slice(0,45)}</p>
+      <p>{title}</p>
     </div>
   )
 }
